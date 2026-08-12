@@ -9,6 +9,10 @@ class Solution:
             else:
                 frequency[num] = 1
 
-        sorted_frequency = sorted(frequency.items(), key=lambda x: x[1], reverse=True)
+        sorted_frequency = sorted(
+            frequency.items(),
+            key=lambda x: x[1],
+            reverse=True
+            )
 
         return [item[0] for item in sorted_frequency[:k]]
